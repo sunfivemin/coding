@@ -21,6 +21,9 @@
         <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/f3121faaad.js" crossorigin="anonymous"></script>
 
+        <!-- Typeit -->
+        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css" />
 
@@ -32,7 +35,7 @@
     </head>
     <body>
         <!-- Header -->
-        <header class="header">
+        <hea0er class="header">
             <div class="header_logo">
                 <img class="header_logo_img" src="images/favicon.ico" alt="logo" />
                 <h1><a href="#">SunFive</a></h1>
@@ -41,7 +44,7 @@
                 <li><a class="header_menu_item active" href="#home">Home</a></li>
                 <li><a class="header_menu_item" href="#work">Work</a></li>
             </ul>
-        </header>
+        </hea0er>
 
         <!-- Main -->
         <main>
@@ -49,10 +52,11 @@
             <section class="home" id="home">
                 <div class="max-container home_container">
                     <img class="home_avatar" src="images/avatar.png" alt="sunfive's avatar" />
-                    <h2 class="home_title">Web Publisher, <strong class="home_title-strong">SUNFIVE</strong></h2>
+                    <h2 class="home_title" aria-label="Web Publisher, SUNFIVE">Web Publisher, <strong class="home_title-strong">SUNFIVE</strong></h2>
                     <p class="home_description">사용자 경혐(UX)을 중시하는 웹 퍼블리셔</p>
                 </div>
             </section>
+
             <!-- Work -->
             <section class="section" id="work">
                 <div class="max-container">
@@ -120,12 +124,12 @@
             </section>
             <aside>
                 <a class="arrow-up" href="#home" title="back to top">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#242424" width="2rem" viewBox="0 0 448 512">
-                        <path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
-                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#242424" width="2rem" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" /></svg>
                 </a>
             </aside>
         </main>
-        <footer class="section footer"><p>ⓒ SUNFIVE - All rights reserved</p></footer>
+        <footer class="section footer">
+            <p>ⓒ SUNFIVE - All rights reserved</p>
+        </footer>
     </body>
 </html>

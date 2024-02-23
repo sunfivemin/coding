@@ -1,3 +1,5 @@
+"use strict";
+
 const sectionIds = ["#home", "#work"];
 const sections = sectionIds.map((id) => document.querySelector(id));
 const navItems = sectionIds.map((id) => document.querySelector(`[href="${id}"]`));
