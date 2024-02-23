@@ -415,9 +415,9 @@ button {
     -webkit-mask: var(--divider-triangle-wave);
     background: var(--color-white);
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
-    width: calc(100% + 1.3px);
+    width: calc(100% + 1px);
     height: 21px;
     overflow: hidden;
     line-height: 0;
