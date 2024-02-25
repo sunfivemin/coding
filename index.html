@@ -1,135 +1,187 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- SEO -->
-        <title>SunFive&#39;s Coding</title>
-        <meta name="description" content="Coding practice for SunFive" />
-        <meta name="author" content="SunFive" />
-        <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <title>SunFive&#39;s Coding</title>
+    <meta name="description" content="Coding practice for SunFive" />
+    <meta name="author" content="SunFive" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
 
-        <!-- OG (Open Graph Data) -->
-        <meta property="og:title" content="Coding practice for SunFive" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://sunfivemin.github.io/coding/" />
-        <meta property="og:image" content="https://sunfivemin.github.io/coding/images/og.webp" />
+    <!-- OG (Open Graph Data) -->
+    <meta property="og:title" content="Coding practice for SunFive" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sunfivemin.github.io/coding/" />
+    <meta
+      property="og:image"
+      content="https://sunfivemin.github.io/coding/images/og.webp"
+    />
 
-        <!-- pretendard font -->
-        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- pretendard font -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/f3121faaad.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/f3121faaad.js"
+      crossorigin="anonymous"
+    ></script>
 
-        <!-- Typeit -->
-        <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <!-- Typeit -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
 
-        <!-- Javascript -->
-        <script type="module" src="src/main.js" defer></script>
-        <script type="module" src="src/projects.js" defer></script>
-        <script type="module" src="src/active_menu.js" defer></script>
-        <script type="module" src="src/type.js" defer></script>
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="header">
-            <div class="header_logo">
-                <img class="header_logo_img" src="images/favicon.ico" alt="logo" />
-                <h1><a href="#">SunFive</a></h1>
-            </div>
-            <ul class="header_menu">
-                <li><a class="header_menu_item active" href="#home">Home</a></li>
-                <li><a class="header_menu_item" href="#work">Work</a></li>
-            </ul>
-        </header>
+    <!-- Javascript -->
+    <script type="module" src="src/main.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
+    <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header_logo">
+        <img class="header_logo_img" src="images/favicon.ico" alt="logo" />
+        <h1><a href="#">SunFive</a></h1>
+      </div>
+      <ul class="header_menu">
+        <li><a class="header_menu_item active" href="#home">Home</a></li>
+        <li><a class="header_menu_item" href="#work">Work</a></li>
+      </ul>
+    </header>
 
-        <!-- Main -->
-        <main>
-            <!-- home -->
-            <section class="home" id="home">
-                <div class="max-container home_container">
-                    <img class="home_avatar" src="images/avatar.png" alt="sunfive's avatar" />
-                    <h2 class="home_title" aria-label="Web Publisher, SUNFIVE">Web Publisher, <strong class="home_title-strong">SUNFIVE</strong></h2>
-                    <p class="home_description">사용자 경혐(UX)을 중시하는 웹 퍼블리셔</p>
+    <!-- Main -->
+    <main>
+      <!-- home -->
+      <section class="home" id="home">
+        <div class="max-container home_container">
+          <img
+            class="home_avatar"
+            src="images/avatar.png"
+            alt="sunfive's avatar"
+          />
+          <h2 class="home_title" aria-label="Web Publisher, SUNFIVE">
+            Web Publisher, <strong class="home_title-strong">SUNFIVE</strong>
+          </h2>
+          <p class="home_description">사용자 경혐(UX)을 중시하는 웹 퍼블리셔</p>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section class="section" id="work">
+        <div class="max-container">
+          <h2 class="title">My Work</h2>
+          <p class="description">자바스크립트 실습해보기</p>
+          <ul class="categories">
+            <li>
+              <button class="category category-selected" data-category="all">
+                All <span class="category_count">8</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="CodingTest">
+                CodingTest <span class="category_count">4</span>
+              </button>
+            </li>
+            <li>
+              <button class="category" data-category="project2">
+                project2 <span class="category_count">2</span>
+              </button>
+            </li>
+          </ul>
+          <ul class="projects">
+            <li class="project" data-type="CodingTest">
+              <a href="#" target="_blank">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="project1"
+                  class="project_img"
+                />
+                <div class="project_metadata">
+                  <h3 class="project_title">Project #1</h3>
+                  <p>Clone Coding with HTML, CSS</p>
                 </div>
-            </section>
-
-            <!-- Work -->
-            <section class="section" id="work">
-                <div class="max-container">
-                    <h2 class="title">My Work</h2>
-                    <p class="description">자바스크립트 실습해보기</p>
-                    <ul class="categories">
-                        <li>
-                            <button class="category category-selected" data-category="all">All <span class="category_count">8</span></button>
-                        </li>
-                        <li>
-                            <button class="category" data-category="CodingTest">CodingTest <span class="category_count">4</span></button>
-                        </li>
-                        <li>
-                            <button class="category" data-category="project2">project2 <span class="category_count">2</span></button>
-                        </li>
-                    </ul>
-                    <ul class="projects">
-                        <li class="project" data-type="CodingTest">
-                            <a href="#" target="_blank">
-                                <img src="https://picsum.photos/500/500" alt="project1" class="project_img" />
-                                <div class="project_metadata">
-                                    <h3 class="project_title">Project #1</h3>
-                                    <p>Clone Coding with HTML, CSS</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project" data-type="CodingTest">
-                            <a href="#" target="_blank">
-                                <img src="https://picsum.photos/500/500" alt="CodingTest" class="project_img" />
-                                <div class="project_metadata">
-                                    <h3 class="project_title">Project #2</h3>
-                                    <p>Clone Coding with HTML, CSS</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project" data-type="project2">
-                            <a href="#" target="_blank">
-                                <img src="https://picsum.photos/500/500" alt="project2" class="project_img" />
-                                <div class="project_metadata">
-                                    <h3 class="project_title">Project #3</h3>
-                                    <p>Clone Coding with HTML, CSS</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project" data-type="CodingTest">
-                            <a href="#" target="_blank">
-                                <img src="https://picsum.photos/500/500" alt="CodingTest" class="project_img" />
-                                <div class="project_metadata">
-                                    <h3 class="project_title">Project #5</h3>
-                                    <p>Clone Coding with HTML, CSS</p>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="project" data-type="project2">
-                            <a href="#" target="_blank">
-                                <img src="https://picsum.photos/500/500" alt="project2" class="project_img" />
-                                <div class="project_metadata">
-                                    <h3 class="project_title">Project #6</h3>
-                                    <p>Clone Coding with HTML, CSS</p>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+              </a>
+            </li>
+            <li class="project" data-type="CodingTest">
+              <a href="#" target="_blank">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="CodingTest"
+                  class="project_img"
+                />
+                <div class="project_metadata">
+                  <h3 class="project_title">Project #2</h3>
+                  <p>Clone Coding with HTML, CSS</p>
                 </div>
-            </section>
-            <aside>
-                <a class="arrow-up" href="#home" title="back to top">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#242424" width="2rem" viewBox="0 0 448 512"><path d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" /></svg>
-                </a>
-            </aside>
-        </main>
-        <footer class="section footer">
-            <p>ⓒ SUNFIVE - All rights reserved</p>
-        </footer>
-    </body>
+              </a>
+            </li>
+            <li class="project" data-type="project2">
+              <a href="#" target="_blank">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="project2"
+                  class="project_img"
+                />
+                <div class="project_metadata">
+                  <h3 class="project_title">Project #3</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="CodingTest">
+              <a href="#" target="_blank">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="CodingTest"
+                  class="project_img"
+                />
+                <div class="project_metadata">
+                  <h3 class="project_title">Project #5</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+            <li class="project" data-type="project2">
+              <a href="#" target="_blank">
+                <img
+                  src="https://picsum.photos/500/500"
+                  alt="project2"
+                  class="project_img"
+                />
+                <div class="project_metadata">
+                  <h3 class="project_title">Project #6</h3>
+                  <p>Clone Coding with HTML, CSS</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <aside>
+        <a class="arrow-up" href="#home" title="back to top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#242424"
+            width="2rem"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+            />
+          </svg>
+        </a>
+      </aside>
+    </main>
+    <footer class="section footer">
+      <p>ⓒ SUNFIVE - All rights reserved</p>
+    </footer>
+  </body>
 </html>

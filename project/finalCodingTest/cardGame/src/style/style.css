@@ -150,8 +150,8 @@
   border-radius: 0.8rem;
   background: #fff;
   display: grid;
-  row-gap: 1.6rem;
-  column-gap: 1.6rem;
+  row-gap: 1.2rem;
+  column-gap: 1.2rem;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   /* grid-template-rows: repeat(2, minmax(100px, auto)); */
