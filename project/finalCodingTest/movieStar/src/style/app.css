@@ -1,0 +1,120 @@
+.movie-container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    width: 67.2rem;
+    margin: 0 auto;
+}
+
+.movie {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 6.4rem;
+}
+
+.poster-container {
+    position: absolute;
+    left: -6.4rem;
+    width: 28.1rem;
+    height: 39.6rem;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.content {
+    width: 60.8rem;
+    height: 50rem;
+    background-color: var(--color-line);
+    border-radius: 1.2rem;
+    color: var(--color-white);
+    padding: 6.4rem 0 0 26.6rem;
+}
+
+.content-type .genre,
+.content-type .age {
+    color: var(--color-border);
+}
+
+.content-type .age::before {
+    content: "";
+    display: inline-block;
+    width: 0.1rem;
+    height: 1rem;
+    background-color: var(--color-border);
+    margin: 0 0.8rem 0 0.4rem;
+}
+
+.content-title {
+    margin: 1.3rem 0 11.4rem 0;
+    font-weight: 700;
+    font-size: 3.2rem;
+}
+
+.content-favorite {
+    display: flex;
+    margin-bottom: 2.2rem;
+}
+
+.btn-recommend,
+.btn-heart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border: 0.2rem solid var(--color-white);
+    border-radius: 100%;
+    margin-right: 2rem;
+}
+
+.btn-recommend.on {
+    background-color: #2F80ED;
+}
+
+.icon-thumbs-up {
+    width: 3rem;
+    height: 3rem;
+    background: center / contain url(../images/icon_thumbs_up.svg) no-repeat;
+}
+
+.btn-recommend.on .icon-thumbs-up {
+    background-image: url(../images/icon_thumbs_up_fill.svg);
+}
+
+.icon-heart {
+    width: 3rem;
+    height: 3rem;
+    background: center / contain url(../images/icon_heart.svg) no-repeat;
+}
+
+.btn-heart.on .icon-heart {
+    background-image: url(../images/icon_heart_fill.svg);
+}
+
+.btn-heart.on {
+    background-color: var(--color-red);
+}
+
+.star-average {
+    display: block;
+    margin-bottom: 1.6rem;
+}
+
+.star-point-container {
+    display: flex;
+    align-items: center;
+}
+
+.star-background {
+    display: flex;
+}
+
+.star-background img {
+    width: 5rem;
+}
+
+.icon-star-delete {
+    width: 2.2rem;
+    margin-left: 1rem;
+}

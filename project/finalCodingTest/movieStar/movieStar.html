@@ -18,51 +18,44 @@
         <!-- pretendard font -->
         <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-        <!-- Font Awesome -->
-        <script src="https://kit.fontawesome.com/f3121faaad.js" crossorigin="anonymous"></script>
-
         <!-- CSS -->
         <link rel="stylesheet" href="./src/style/reset.css" />
-        <link rel="stylesheet" href="./src/style/style.css" />
+        <link rel="stylesheet" href="./src/style/app.css" />
 
-        <!-- JS -->
-        <script src="src/js/main.js" defer></script>
     </head>
     <body>
         <div id="app">
             <div class="movie-container">
                 <main class="movie">
                     <div class="poster-container">
-                        <img src="src/images/poster_exhuma.jpg" alt="" />
+                        <img src="src/images/poster_exhuma.jpg" alt="파묘 포스터" />
                     </div>
                     <div class="content">
                         <div class="content-type">
-                            <span>미스터리</span>
-                            <span>15세</span>
+                            <span class="genre">미스터리</span>
+                            <span class="age">15세</span>
                         </div>
                         <h3 class="content-title">파묘</h3>
                         <div class="content-favorite">
-                            <button class="recommend-btn">
-                                <span>추천합니다</span>
-                                <i class="icon-thumbs-up"></i>
+                            <button class="btn-recommend">
+                                <i class="icon-thumbs-up"><span class="sr-only">추천합니다</span></i>
                             </button>
-                            <button class="recommend-btn">
-                                <span>찜하기</span>
-                                <i class="icon-heart"></i>
+                            <button class="btn-heart">
+                                <i class="icon-heart"><span class="sr-only">찜하기</span></i>
                             </button>
                         </div>
                         <div class="content-star">
                             <em class="star-average">별점 평균 4.5</em>
                             <div class="star-point-container">
                                 <div class="star-background">
-                                    <img src="" alt="1" title="별로에요" data-point="1" />
-                                    <img src="" alt="2" title="그저그래요" data-point="2" />
-                                    <img src="" alt="3" title="괜찮아요" data-point="3" />
-                                    <img src="" alt="4" title="좋아요" data-point="4"  />
-                                    <img src="" alt="5" title="강추" data-point="5" />
+                                    <img src="src/images/icon_empty_star.svg" alt="1" title="별로에요" data-point="1" />
+                                    <img src="src/images/icon_empty_star.svg" alt="2" title="그저그래요" data-point="2" />
+                                    <img src="src/images/icon_empty_star.svg" alt="3" title="괜찮아요" data-point="3" />
+                                    <img src="src/images/icon_empty_star.svg" alt="4" title="좋아요" data-point="4" />
+                                    <img src="src/images/icon_empty_star.svg" alt="5" title="강추" data-point="5" />
                                 </div>
-                                <button>
-                                    <i class="icon-star-delete"><img src="src/images/x-circle.svg" alt="별점 제거"></i>
+                                <button class="icon-star-delete">
+                                    <img src="src/images/icon-remove-star.svg" alt="별점 제거" />
                                 </button>
                             </div>
                         </div>
@@ -70,5 +63,6 @@
                 </main>
             </div>
         </div>
+        <script type="module" src="src/javascript/index.js"></script>
     </body>
 </html>
