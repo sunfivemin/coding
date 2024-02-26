@@ -53,34 +53,47 @@ class StarPoint {
             const starImageWidth = starImageClientRect.width;
             const isOverHalf = starImageWidth / 2 < currentUserPoint; // 마우스 포인터의 위치가 별점의 중간을 넘어서면 true
 
-            this.renderStarPointImages({ drawableLimitIndex: starPointIndex, isOverHalf });
+            this.renderStarPointImages({ drawableLimitIndex: starPointIndex, isOverHalf }); // 객체 전달
         });
 
         // 마우스 클릭시 별점 고정
-        this.starBackgroundElement.addEventListener('click', () => this.lockStarPoint());
+        this.starBackgroundElement.addEventListener("click", () => this.lockStarPoint());
 
         // 리셋버튼 이벤트 할당
-        this.starPointResetButton.addEventListener('click', () => {
+        this.starPointResetButton.addEventListener("click", () => {
             this.unLockedStarPoint();
             this.resetStarPointImages();
         });
 
         // 마우스 아웃 당시 별점이 고정상태가 아니라면 별점 초기화
-        this.starBackgroundElement.addEventListener('mouseout', () => {
+        this.starBackgroundElement.addEventListener("mouseout", () => {
             !this.isLockedStarPoint() && this.resetStarPointImages();
         });
     }
 
     renderStarPointImages(payload = {}) {
+        // 전달인자 받기
         const { drawableLimitIndex = -1, isOverHalf = false } = payload; // 초기값 할당
-        // NodeList !== Array.call을 통해서 함수를 호출하는 객체를 Array에서 NodeList 객체로 재할당
-        Array.prototype.forEach.call(this.starImages, (starImage, index) => {
+        // // IE 호환을 위해 NodeList !== Array.call을 통해서 함수를 호출하는 객체를 Array에서 NodeList 객체로 재할당
+        // Array.prototype.forEach.call(this.starImages, (starImage, index) => {
+        //     // 현재 순환 순서보다 마우스가 호버된 별의 인덱스가 크다면 꽉찬별, 아니면 빈별을 채웁니다.
+        //     let imageSource = index < drawableLimitIndex ? starImageSourceMap.full : starImageSourceMap.empty;
 
+        //     // 현재 순환 순서와 마우스가 호버된 별의 인덱스가 같은 경우
+        //     if (drawableLimitIndex === index) {
+        //         imageSource = isOverHalf ? starImageSourceMap.full : starImageSourceMap.half;
+        //     }
+
+        //     // 현재 순환중인 이미지에 src값을 할당
+        //     starImage.src = imageSource;
+        // });
+
+        this.starImages.forEach((starImage, index) => {
             // 현재 순환 순서보다 마우스가 호버된 별의 인덱스가 크다면 꽉찬별, 아니면 빈별을 채웁니다.
             let imageSource = index < drawableLimitIndex ? starImageSourceMap.full : starImageSourceMap.empty;
 
             // 현재 순환 순서와 마우스가 호버된 별의 인덱스가 같은 경우
-            if(drawableLimitIndex === index) {
+            if (drawableLimitIndex === index) {
                 imageSource = isOverHalf ? starImageSourceMap.full : starImageSourceMap.half;
             }
 
