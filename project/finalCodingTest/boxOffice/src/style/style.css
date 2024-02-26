@@ -55,8 +55,8 @@
 /* 컨테이너 스타일 */
 .cont-movie {
   width: auto;
-  max-width: 100%;
-  margin: 8rem 2rem 4rem;
+  max-width: 98rem;
+  margin: 8rem auto 4rem;
   padding: 0 3rem 3rem;
   border: 1px solid #f7f6f4;
   border-radius: 0.8rem;
@@ -139,6 +139,7 @@
 }
 
 .content-container.target {
+
   display: block;
 }
 /* 컨텐츠 스타일 */

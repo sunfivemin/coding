@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO -->
+        <title>이미지 캐러셀</title>
+        <meta name="description" content="Coding practice for SunFive" />
+        <meta name="author" content="SunFive" />
+        <link rel="shortcut icon" href="https://sunfivemin.github.io/coding/images/favicon.ico" type="image/x-icon" />
+
+        <!-- OG (Open Graph Data) -->
+        <meta property="og:title" content="Coding practice for SunFive" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sunfivemin.github.io/coding/" />
+        <meta property="og:image" content="https://sunfivemin.github.io/coding/images/og.webp" />
+
+        <!-- pretendard font -->
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/f3121faaad.js" crossorigin="anonymous"></script>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./src/style/reset.css" />
+        <link rel="stylesheet" href="./src/style/style.css" />
+
+        <!-- JS -->
+        <script src="src/js/main.js" defer></script>
+    </head>
+    <body>
+        <main class="carousel-wrap">
+            <section id="carousel" class="carousel">
+                <h1 class="util-ir">캐러셀 이미지 리스트</h1>
+                <div class="carousel-cont">
+                    <ul class="carousel-list">
+                        <li class="carousel-item current">
+                            <img src="src/images/이미지_1.png" alt="" />
+                        </li>
+                        <li class="carousel-item">
+                            <img src="src/images/이미지_2.png" alt="" />
+                        </li>
+                        <li class="carousel-item">
+                            <img src="src/images/이미지_3.png" alt="" />
+                        </li>
+                        <li class="carousel-item">
+                            <img src="src/images/이미지_4.png" alt="" />
+                        </li>
+                        <li class="carousel-item">
+                            <img src="src/images/이미지_5.png" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="prev-btn"><i class="fa-solid fa-chevron-left pr-10"></i>Prev</button>
+                <button type="button" class="next-btn">Next<i class="fa-solid fa-chevron-right pl-10"></i></button>
+            </section>
+            <form action="" class="image-upload">
+                <input type="file" accept="image/*" id="image-upload-input" class="image-upload-input" />
+                <label for="image-upload-input" class="image-upload-label">이미지 업로드</label>
+            </form>
+        </main>
+
+
+    </body>
+</html>
