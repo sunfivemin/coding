@@ -178,10 +178,12 @@ button {
 .header_logo_img {
     width: 3.6rem;
     height: 3.6rem;
+    transition: all 0.3s;
 }
 
 .header_logo_title {
     font-size: 3.2rem;
+    transition: all 0.3s;
 }
 
 .header_menu {

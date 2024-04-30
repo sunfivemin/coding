@@ -16,6 +16,8 @@ document.addEventListener("scroll", () => {
 // Home 섹션을 아래로 스크롤시 투명하게 처리함
 const home = document.querySelector(".home_container");
 const homeHeight = home.offsetHeight;
+
+
 document.addEventListener("scroll", () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
@@ -30,3 +32,17 @@ document.addEventListener("scroll", () => {
     }
 });
 
+// 스크롤시 로고 작아짐
+const logoImg = document.querySelector(".header_logo_img");
+const logoTit = document.querySelector(".header_logo_title");
+document.addEventListener("scroll", () => {
+    if (window.scrollY > headerHeight) {
+        logoImg.style.width = "3rem";
+        logoImg.style.height = "3rem";
+        logoTit.style.fontSize = "2.8rem";
+    } else {
+        logoImg.style.width = "3.6rem";
+        logoImg.style.height = "3.6rem";
+        logoTit.style.fontSize = "3.2rem";
+    }
+});
