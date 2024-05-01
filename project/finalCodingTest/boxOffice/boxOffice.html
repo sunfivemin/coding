@@ -1,861 +1,727 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- SEO -->
-    <title>SunFive&#39;s Coding</title>
-    <meta name="description" content="Coding practice for SunFive" />
-    <meta name="author" content="SunFive" />
-    <link
-      rel="shortcut icon"
-      href="https://sunfivemin.github.io/coding/images/favicon.ico"
-      type="image/x-icon"
-    />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- SEO -->
+        <title>SunFive&#39;s Coding</title>
+        <meta name="description" content="Coding practice for SunFive" />
+        <meta name="author" content="SunFive" />
+        <link rel="shortcut icon" href="https://sunfivemin.github.io/coding/images/favicon.ico" type="image/x-icon" />
 
-    <!-- OG (Open Graph Data) -->
-    <meta property="og:title" content="Coding practice for SunFive" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sunfivemin.github.io/coding/" />
-    <meta
-      property="og:image"
-      content="https://sunfivemin.github.io/coding/images/og.webp"
-    />
+        <!-- OG (Open Graph Data) -->
+        <meta property="og:title" content="Coding practice for SunFive" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://sunfivemin.github.io/coding/" />
+        <meta property="og:image" content="https://sunfivemin.github.io/coding/images/og.webp" />
 
-    <!-- pretendard font -->
-    <link
-      rel="stylesheet"
-      as="style"
-      crossorigin
-      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
-    />
+        <!-- pretendard font -->
+        <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/style/reset.css" />
-    <link rel="stylesheet" href="./src/style/style.css" />
-  </head>
-  <body>
-    <div class="nav-skip">
-      <a href="#cont-nav">영화 정보 목록 바로가기</a>
-      <a href="#cont-company">회사정보 바로가기</a>
-    </div>
-    <h1 class="sr-only">Cinema</h1>
-    <main class="cont-movie">
-      <h2 class="tit-cont">Cinema List</h2>
-      <header>
-        <h3 class="sr-only">MOVIE LIST</h3>
-        <nav id="cont-nav" class="nav-movie">
-          <ul class="list-movieNav">
-            <li class="link-nav">
-              <a href="#none" class="link-nav-title active" data-tab="current"
-                >현재상영영화</a
-              >
-            </li>
-            <li class="link-nav">
-              <a href="#none" class="link-nav-title" data-tab="coming"
-                >개봉예정영화</a
-              >
-            </li>
-            <li class="link-nav">
-              <a href="#none" class="link-nav-title" data-tab="box-office"
-                >박스오피스</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <section id="current" class="content-container target">
-        <h3 class="sr-only">현재 상영 영화 목록</h3>
-        <ul class="list-movieInfo">
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">1</span>
-                </div>
-                <img src="src/images/current_01.jpg" alt="파묘" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">파묘</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>미스터리</dd>
-                  <dd class="info-time">134분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>9.05</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.22</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">최민식, 김고은, 유해진, 이도현</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">2</span>
-                </div>
-                <img src="src/images/current_02.jpg" alt="건국전쟁" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">건국전쟁</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>다큐멘터리</dd>
-                  <dd class="info-time">101분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>9.25</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2021.04.01</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">3</span>
-                </div>
-                <img src="src/images/current_03.jpg" alt="윙카" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">윙카</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>판타지</dd>
-                  <dd class="info-time">116분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>7.77</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.01.12</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    티모시 샬라메, 칼라 레인, 올리비아 콜맨, 휴 그랜트
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">4</span>
-                </div>
-                <img src="src/images/current_04.jpg" alt="귀멸의 칼날" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">귀멸의 칼날</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>애니메이션</dd>
-                  <dd class="info-time">103분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>9.88</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.04.15</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    하나에 나츠키, 키토 아카리, 하나자와 카나와
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">5</span>
-                </div>
-                <img src="src/images/current_05.jpg" alt="사운드 오브 프리덤" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">사운드 오브 프리덤</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>범죄</dd>
-                  <dd class="info-time">131분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>9.35</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.17</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">제임스 카비젤</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">6</span>
-                </div>
-                <img src="src/images/current_06.jpg" alt="이프온리" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">이프온리</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>멜로/로맨스</dd>
-                  <dd class="info-time">96분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>9.21</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.21</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    제니퍼 러브 휴잇, 폴 니콜스, 톰 윌킨슨
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">7</span>
-                </div>
-                <img src="src/images/current_07.jpg" alt="데드맨" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">데드맨</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>범죄</dd>
-                  <dd class="info-time">108분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>6.76</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.07</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    조진웅, 김희애, 이수경, 박호산, 전무송
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <div class="badge">
-                  <svg width="26" height="30" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="m13 24.25-13 5V0h26v29.25l-13-5Z"
-                      fill="rgba(240,96,53, 0.86)"
-                    ></path>
-                  </svg>
-                  <span class="badge-num">8</span>
-                </div>
-                <img src="src/images/current_08.jpg" alt="바튼 아카데미" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">바튼 아카데미</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>코미디</dd>
-                  <dd class="info-time">133분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>8.65</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.21</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    폴 지아마티, 더바인 조이 랜돌프, 도미닉 세사
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section id="coming" class="content-container">
-        <h3 class="sr-only">개봉 예정 영화</h3>
-        <ul class="list-movieInfo">
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_01.jpg" alt="듄: 파트2" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">듄: 파트2</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>액션</dd>
-                  <dd class="info-time">166분</dd>
-                </div>
-
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.28.</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    티모시 샬라메, 젠데이아 콜먼, 레베카 퍼거슨
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_02.jpg" alt="중경삼림" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">중경삼림</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>드라마</dd>
-                  <dd class="info-time">102분</dd>
-                </div>
-                <div class="item-star">
-                  <dt>평점</dt>
-                  <dd>9.06</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.28</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    임청하, 양조위, 왕페이, 금성무, 주가령
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_03.jpg" alt="막걸리가 알려줄거야" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">막걸리가 알려줄거야</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>드라마</dd>
-                  <dd class="info-time">91분</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.28</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">박나은, 박효주, 김희원, 김지훈</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_04.jpg" alt="여기는 아미코" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">여기는 아미코</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>드라마</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.02.28.</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_05.jpg" alt="아이엠 티라노" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">아이엠 티라노</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>애니메이션</dd>
-                  <dd class="info-time">77분</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.03.01</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_06.jpg" alt="가여운 것들" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">가여운 것들</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>SF</dd>
-                  <dd class="info-time">141분</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.03.06</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">
-                    엠마 스톤, 마크 러팔로, 윌렘 대포
-                  </dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img
-                  src="src/images/coming_07.jpg"
-                  alt="브레드이발소: 셀럽 인 베이커리타운"
-                />
-              </a>
-              <strong class="tit-movie sl-ellipsis"
-                >브레드이발소: 셀럽 인 베이커리타운</strong
-              >
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>애니메이션</dd>
-                  <dd class="info-time">73분</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.03.01</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/coming_08.jpg" alt="패스트 라이브즈" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">패스트 라이브즈</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>개요</dt>
-                  <dd>드라마</dd>
-                  <dd class="info-time">105분</dd>
-                </div>
-                <div>
-                  <dt>개봉</dt>
-                  <dd>2024.03.06</dd>
-                </div>
-                <div>
-                  <dt>출연</dt>
-                  <dd class="multi-ellipsis">그레타 리, 유태오, 존 마가로</dd>
-                </div>
-              </dl>
-            </article>
-            <div class="button-area">
-              <a href="#none" class="link-reserv">예매하기</a
-              ><a href="#none" class="link-teaser">예고편</a>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section id="box-office" class="content-container">
-        <h3 class="sr-only">현재 상영 영화 목록</h3>
-        <ul class="list-movieInfo">
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img
-                  src="src/images/box-office_01.jpg"
-                  alt="월레스와 그로밋 더 클래식 컬렉션"
-                />
-              </a>
-              <strong class="tit-movie sl-ellipsis"
-                >월레스와 그로밋 더 클래식 컬렉션</strong
-              >
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>33만명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_02.jpg" alt="화양연화" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">화양연화</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>249명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_03.jpg" alt="소풍" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">소풍</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>5,151명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_04.jpg" alt="괴물" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">괴물</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>266명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_05.jpg" alt="오펜하이머" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">오펜하이머</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>324명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_06.jpg" alt="추락의 해부" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">추락의 해부</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>651명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_07.jpg" alt="플랜 75" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">플랜 75</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>311명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-          <li>
-            <article>
-              <h4 class="sr-only">영화 상세 정보</h4>
-              <a href="#none" class="link-movie">
-                <span class="sr-only">영화 상세페이지로 이동</span>
-                <img src="src/images/box-office_08.jpg" alt="우견니" />
-              </a>
-              <strong class="tit-movie sl-ellipsis">우견니</strong>
-              <dl class="list-info">
-                <div>
-                  <dt>누적 관계수</dt>
-                  <dd>366명</dd>
-                </div>
-              </dl>
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer id="cont-company" class="cont-company">
-      <section class="cont-coInfo">
-        <h2 class="sr-only">기업정보</h2>
-        <div class="cont-tit">
-          <strong class="tit-company">Cinema</strong>
-          <ul class="list-sns">
-            <li><a href="#none" class="link-twitter">트위터</a></li>
-            <li><a href="#none" class="link-insta">인스타그램</a></li>
-            <li><a href="#none" class="link-facebook">페이스북</a></li>
-          </ul>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./src/style/reset.css" />
+        <link rel="stylesheet" href="./src/style/style.css" />
+    </head>
+    <body>
+        <div class="nav-skip">
+            <a href="#cont-nav">영화 정보 목록 바로가기</a>
+            <a href="#cont-company">회사정보 바로가기</a>
         </div>
-        <dl class="list-coInfo">
-          <dt class="sr-only">사명</dt>
-          <dd>(주)시네마</dd>
-          <dt>대표</dt>
-          <dd>민선오</dd>
-          <dt>사업자번호</dt>
-          <dd>000-0000-0000</dd>
-          <dd>광고 영화 및 비디오물 제작업</dd>
-          <dt>주소</dt>
-          <dd>제주특별자치도</dd>
-        </dl>
-        <em class="sr-only">sns 링크 목록</em>
+        <h1 class="sr-only">Cinema</h1>
+        <main class="cont-movie">
+            <h2 class="tit-cont">Cinema List</h2>
+            <header>
+                <h3 class="sr-only">MOVIE LIST</h3>
+                <nav id="cont-nav" class="nav-movie">
+                    <ul class="list-movieNav">
+                        <li class="link-nav">
+                            <a href="#none" class="link-nav-title active" data-tab="current">현재상영영화</a>
+                        </li>
+                        <li class="link-nav">
+                            <a href="#none" class="link-nav-title" data-tab="coming">개봉예정영화</a>
+                        </li>
+                        <li class="link-nav">
+                            <a href="#none" class="link-nav-title" data-tab="box-office">박스오피스</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="current" class="content-container target">
+                <h3 class="sr-only">현재 상영 영화 목록</h3>
+                <ul class="list-movieInfo">
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">1</span>
+                                </div>
+                                <img src="src/images/current_01.jpg" alt="파묘" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">파묘</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>미스터리</dd>
+                                    <dd class="info-time">134분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>9.05</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.22</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">최민식, 김고은, 유해진, 이도현</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">2</span>
+                                </div>
+                                <img src="src/images/current_02.jpg" alt="건국전쟁" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">건국전쟁</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>다큐멘터리</dd>
+                                    <dd class="info-time">101분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>9.25</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2021.04.01</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">3</span>
+                                </div>
+                                <img src="src/images/current_03.jpg" alt="윙카" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">윙카</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>판타지</dd>
+                                    <dd class="info-time">116분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>7.77</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.01.12</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">티모시 샬라메, 칼라 레인, 올리비아 콜맨, 휴 그랜트</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">4</span>
+                                </div>
+                                <img src="src/images/current_04.jpg" alt="귀멸의 칼날" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">귀멸의 칼날</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>애니메이션</dd>
+                                    <dd class="info-time">103분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>9.88</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.04.15</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">하나에 나츠키, 키토 아카리, 하나자와 카나와</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">5</span>
+                                </div>
+                                <img src="src/images/current_05.jpg" alt="사운드 오브 프리덤" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">사운드 오브 프리덤</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>범죄</dd>
+                                    <dd class="info-time">131분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>9.35</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.17</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">제임스 카비젤</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">6</span>
+                                </div>
+                                <img src="src/images/current_06.jpg" alt="이프온리" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">이프온리</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>멜로/로맨스</dd>
+                                    <dd class="info-time">96분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>9.21</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.21</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">제니퍼 러브 휴잇, 폴 니콜스, 톰 윌킨슨</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">7</span>
+                                </div>
+                                <img src="src/images/current_07.jpg" alt="데드맨" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">데드맨</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>범죄</dd>
+                                    <dd class="info-time">108분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>6.76</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.07</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">조진웅, 김희애, 이수경, 박호산, 전무송</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <div class="badge">
+                                    <svg width="26" height="30" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="m13 24.25-13 5V0h26v29.25l-13-5Z" fill="rgba(240,96,53, 0.86)"></path>
+                                    </svg>
+                                    <span class="badge-num">8</span>
+                                </div>
+                                <img src="src/images/current_08.jpg" alt="바튼 아카데미" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">바튼 아카데미</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>코미디</dd>
+                                    <dd class="info-time">133분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>8.65</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.21</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">폴 지아마티, 더바인 조이 랜돌프, 도미닉 세사</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                </ul>
+            </section>
+            <section id="coming" class="content-container">
+                <h3 class="sr-only">개봉 예정 영화</h3>
+                <ul class="list-movieInfo">
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_01.jpg" alt="듄: 파트2" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">듄: 파트2</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>액션</dd>
+                                    <dd class="info-time">166분</dd>
+                                </div>
 
-        <small class="txt-copy"
-          >Copyright &copy;SUNFIVE. All Rights Reserved.</small
-        >
-      </section>
-    </footer>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.28.</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">티모시 샬라메, 젠데이아 콜먼, 레베카 퍼거슨</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_02.jpg" alt="중경삼림" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">중경삼림</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>드라마</dd>
+                                    <dd class="info-time">102분</dd>
+                                </div>
+                                <div class="item-star">
+                                    <dt>평점</dt>
+                                    <dd>9.06</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.28</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">임청하, 양조위, 왕페이, 금성무, 주가령</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_03.jpg" alt="막걸리가 알려줄거야" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">막걸리가 알려줄거야</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>드라마</dd>
+                                    <dd class="info-time">91분</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.28</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">박나은, 박효주, 김희원, 김지훈</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_04.jpg" alt="여기는 아미코" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">여기는 아미코</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>드라마</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.02.28.</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_05.jpg" alt="아이엠 티라노" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">아이엠 티라노</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>애니메이션</dd>
+                                    <dd class="info-time">77분</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.03.01</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_06.jpg" alt="가여운 것들" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">가여운 것들</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>SF</dd>
+                                    <dd class="info-time">141분</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.03.06</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">엠마 스톤, 마크 러팔로, 윌렘 대포</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_07.jpg" alt="브레드이발소: 셀럽 인 베이커리타운" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">브레드이발소: 셀럽 인 베이커리타운</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>애니메이션</dd>
+                                    <dd class="info-time">73분</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.03.01</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/coming_08.jpg" alt="패스트 라이브즈" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">패스트 라이브즈</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>개요</dt>
+                                    <dd>드라마</dd>
+                                    <dd class="info-time">105분</dd>
+                                </div>
+                                <div>
+                                    <dt>개봉</dt>
+                                    <dd>2024.03.06</dd>
+                                </div>
+                                <div>
+                                    <dt>출연</dt>
+                                    <dd class="multi-ellipsis">그레타 리, 유태오, 존 마가로</dd>
+                                </div>
+                            </dl>
+                        </article>
+                        <div class="button-area"><a href="#none" class="link-reserv">예매하기</a><a href="#none" class="link-teaser">예고편</a></div>
+                    </li>
+                </ul>
+            </section>
+            <section id="box-office" class="content-container">
+                <h3 class="sr-only">현재 상영 영화 목록</h3>
+                <ul class="list-movieInfo">
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_01.jpg" alt="월레스와 그로밋 더 클래식 컬렉션" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">월레스와 그로밋 더 클래식 컬렉션</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>33만명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_02.jpg" alt="화양연화" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">화양연화</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>249명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_03.jpg" alt="소풍" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">소풍</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>5,151명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_04.jpg" alt="괴물" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">괴물</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>266명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_05.jpg" alt="오펜하이머" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">오펜하이머</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>324명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_06.jpg" alt="추락의 해부" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">추락의 해부</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>651명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_07.jpg" alt="플랜 75" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">플랜 75</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>311명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h4 class="sr-only">영화 상세 정보</h4>
+                            <a href="#none" class="link-movie">
+                                <span class="sr-only">영화 상세페이지로 이동</span>
+                                <img src="src/images/box-office_08.jpg" alt="우견니" />
+                            </a>
+                            <strong class="tit-movie sl-ellipsis">우견니</strong>
+                            <dl class="list-info">
+                                <div>
+                                    <dt>누적 관계수</dt>
+                                    <dd>366명</dd>
+                                </div>
+                            </dl>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer id="cont-company" class="cont-company">
+            <section class="cont-coInfo">
+                <h2 class="sr-only">기업정보</h2>
+                <div class="cont-tit">
+                    <strong class="tit-company">Cinema</strong>
+                    <ul class="list-sns">
+                        <li><a href="#none" class="link-twitter">트위터</a></li>
+                        <li><a href="#none" class="link-insta">인스타그램</a></li>
+                        <li><a href="#none" class="link-facebook">페이스북</a></li>
+                    </ul>
+                </div>
+                <dl class="list-coInfo">
+                    <dt class="sr-only">사명</dt>
+                    <dd>(주)시네마</dd>
+                    <dt>대표</dt>
+                    <dd>민선오</dd>
+                    <dt>사업자번호</dt>
+                    <dd>000-0000-0000</dd>
+                    <dd>광고 영화 및 비디오물 제작업</dd>
+                    <dt>주소</dt>
+                    <dd>제주특별자치도</dd>
+                </dl>
+                <em class="sr-only">sns 링크 목록</em>
 
-    <script>
-      const tabItem = document.querySelectorAll(".link-nav-title");
-      const tabContent = document.querySelectorAll(".content-container");
+                <small class="txt-copy">Copyright &copy;SUNFIVE. All Rights Reserved.</small>
+            </section>
+        </footer>
 
-      tabItem.forEach((item) => {
-        item.addEventListener("click", tabHandler);
-      });
+        <script>
+            const tabItem = document.querySelectorAll(".link-nav-title");
+            const tabContent = document.querySelectorAll(".content-container");
 
-      function tabHandler(item) {
-        const tabTarget = item.currentTarget;
-        const targetData = tabTarget.dataset.tab;
-        tabItem.forEach((title) => {
-          title.classList.remove("active");
-        });
-        tabContent.forEach((targetData) => {
-          targetData.classList.remove("target");
-        });
-        document.querySelector("#" + targetData).classList.add("target");
-        tabTarget.classList.add("active");
-      }
-    </script>
-  </body>
+            tabItem.forEach((item) => {
+                item.addEventListener("click", tabHandler);
+            });
+
+            function tabHandler(item) {
+                const tabTarget = item.currentTarget;
+                const targetData = tabTarget.dataset.tab;
+                tabItem.forEach((title) => {
+                    title.classList.remove("active");
+                });
+                tabContent.forEach((targetData) => {
+                    targetData.classList.remove("target");
+                });
+                document.querySelector("#" + targetData).classList.add("target");
+                tabTarget.classList.add("active");
+            }
+        </script>
+    </body>
 </html>

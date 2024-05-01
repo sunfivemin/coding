@@ -161,6 +161,23 @@ button {
     transition: all 300ms ease;
 }
 
+.progress_bar {
+    position: absolute;
+    height: 0.3rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-primary-variant);
+    z-index: 9999;
+}
+
+.progress_fill {
+    height: 100%;
+    background-color: var(--color-primary);
+    width: 0;
+    transition: all 300ms ease;
+}
+
 .header-dark {
     /* /* background-color: var(--color-primary-variant); */
     box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
@@ -212,7 +229,7 @@ button {
     /* background-image: var(--home-bg-svg); */
     color: var(--color-text);
     text-align: center;
-    padding: 7rem 0 14rem;
+    padding: 10rem 0 14rem;
     overflow: hidden;
 }
 
